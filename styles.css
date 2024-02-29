@@ -1,1 +1,121 @@
 /* your code here */
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@1,1000&family=Poppins:wght@100;200;300;400;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins", sans-serif;
+}
+footer{
+    background-color: black;
+    color: white;
+    padding: 70px;
+}
+.content{
+  max-width: 1170px;
+  margin: auto;
+}
+
+.top{
+    display: flex;
+    justify-content: space-between;
+    margin-top: -10px;
+}
+
+.logo-details{
+    font-size: 35px;
+    font-weight: 400;
+}
+.media-icons{
+        display: flex;
+}
+.media-icons a{ 
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    color: white;
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+}
+
+.media-icons .facebook{
+    background-color: rgb(85, 85, 192);
+}
+.media-icons .twitter{
+  background-color: rgb(36, 159, 207);
+}
+.media-icons .instagram{
+    background-color: rgb(225, 51, 80);
+}
+.media-icons .linkedin{
+    background-color: rgb(14, 129, 174);
+}
+.media-icons .youtube{
+    background-color: red;
+}
+
+.link-boxes{
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+/* row */
+.box-col{
+    width: 25%;
+    padding: 50px 15px;
+}
+h4 {
+    font-size: 20px;
+    position: relative;
+    margin-bottom: 20px;
+    text-decoration: underline;
+}
+
+.box-col ul li :not(:last-child){
+    margin-bottom: 10px;
+}
+
+.box-col ul li a{
+    font-size: 18px;
+    text-decoration: none;
+    color: #bbbb;
+}
+.box-col .contact li{
+    color: #bbbb;
+    font-size: 18px;
+}
+
+ul{
+    list-style: none;
+}
+.bottom-details{
+  background-color: rgb(123, 117, 117);
+  max-width: 100%;
+  color:white;
+  border: 1px solid green;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  margin-top: 20px;
+  margin: 0px;
+}
+
+
+/* responsive */
+@media(max-width: 767px){
+    .box-col{
+        width: 50%;
+        margin-bottom: 30px;
+    }
+
+}
+
+@media(max-width: 574px){
+    .box-col{
+        width: 100%;
+    }
+
+}
